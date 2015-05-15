@@ -11,10 +11,10 @@ call vundle#begin()
 Plugin 'gmarik/Vundle.vim'
 
 Plugin 'scrooloose/nerdtree'
-
 Plugin 'fisadev/fisa-vim-config'
-
 Plugin 'vim-scripts/bash-support.vim'
+Plugin 'kien/ctrlp.vim'
+Plugin 'bling/vim-airline'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -37,3 +37,22 @@ set autoindent
 set cindent
 colorscheme desert
 set bg=dark
+
+" auto start NERDTree
+"autocmd vimenter * NERDTree
+
+" Setting for CtrlP
+" https://github.com/kien/ctrlp.vim
+let g:ctrlp_map = '<c-p>'
+let g:ctrlp_cmd = 'CtrlP'
+let g:ctrlp_working_path_mode = 'ra'
+set wildignore+=*/tmp/*,*.so,*.swp,*.zip
+let g:ctrlp_custom_ignore = '\v[\/]\.(git|hg|svn)$'
+let g:ctrlp_user_command = 'find %s -type f'
+
+" Setting for airline
+" http://terrychen.logdown.com/posts/2014/10/18/vim-airline-status-bar-helper
+" set status line
+set laststatus=2
+" enable powerline-fonts
+let g:airline_powerline_fonts=1
