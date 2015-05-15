@@ -11,7 +11,6 @@ call vundle#begin()
 Plugin 'gmarik/Vundle.vim'
 
 Plugin 'scrooloose/nerdtree'
-Plugin 'fisadev/fisa-vim-config'
 Plugin 'vim-scripts/bash-support.vim'
 Plugin 'kien/ctrlp.vim'
 Plugin 'bling/vim-airline'
