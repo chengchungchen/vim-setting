@@ -41,7 +41,6 @@ set bg=dark
 "autocmd vimenter * NERDTree
 
 " Setting for CtrlP
-" https://github.com/kien/ctrlp.vim
 let g:ctrlp_map = '<c-p>'
 let g:ctrlp_cmd = 'CtrlP'
 let g:ctrlp_working_path_mode = 'ra'
@@ -50,8 +49,11 @@ let g:ctrlp_custom_ignore = '\v[\/]\.(git|hg|svn)$'
 let g:ctrlp_user_command = 'find %s -type f'
 
 " Setting for airline
-" http://terrychen.logdown.com/posts/2014/10/18/vim-airline-status-bar-helper
 " set status line
 set laststatus=2
 " enable powerline-fonts
 let g:airline_powerline_fonts=1
+
+" Setting for bash-support
+let g:BASH_AuthorName   = 'Cheng-Chung Chen'
+let g:BASH_Email        = 'leocoolchung@gmail.com'
