@@ -36,12 +36,13 @@ set autoindent
 set cindent
 colorscheme desert
 set bg=dark
-<<<<<<< HEAD:.vimrc
 set tabstop=4
 =======
 
+" Setting for NERDTree
 " auto start NERDTree
 "autocmd vimenter * NERDTree
+nnoremap <silent> <F5> :NERDTree<CR>
 
 " Setting for CtrlP
 let g:ctrlp_map = '<c-p>'
@@ -60,4 +61,3 @@ let g:airline_powerline_fonts=1
 " Setting for bash-support
 let g:BASH_AuthorName   = 'Cheng-Chung Chen'
 let g:BASH_Email        = 'leocoolchung@gmail.com'
->>>>>>> 0d64bba582dd9a47fce46fb207d83fdf42cf4f56:vimrc
