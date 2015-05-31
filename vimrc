@@ -37,7 +37,6 @@ set cindent
 colorscheme desert
 set bg=dark
 set tabstop=4
-=======
 
 " Setting for NERDTree
 " auto start NERDTree

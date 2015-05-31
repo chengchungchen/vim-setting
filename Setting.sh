@@ -6,7 +6,7 @@
 mkdir ~/.font/
 git clone https://github.com/Lokaltog/powerline-fonts.git ~/.font/powerline-fonts
 ~/.font/powerline-fonts/install.sh
-fc-cache -vf ~/.fonts
+fc-cache -vf ~/.font
 
 # Install Vundle and plugin
 git clone https://github.com/gmarik/Vundle.vim.git ~/.vim/bundle/Vundle.vim
