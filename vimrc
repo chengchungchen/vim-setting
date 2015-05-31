@@ -11,10 +11,9 @@ call vundle#begin()
 Plugin 'gmarik/Vundle.vim'
 
 Plugin 'scrooloose/nerdtree'
-
-Plugin 'fisadev/fisa-vim-config'
-
 Plugin 'vim-scripts/bash-support.vim'
+Plugin 'kien/ctrlp.vim'
+Plugin 'bling/vim-airline'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -37,4 +36,28 @@ set autoindent
 set cindent
 colorscheme desert
 set bg=dark
+<<<<<<< HEAD:.vimrc
 set tabstop=4
+=======
+
+" auto start NERDTree
+"autocmd vimenter * NERDTree
+
+" Setting for CtrlP
+let g:ctrlp_map = '<c-p>'
+let g:ctrlp_cmd = 'CtrlP'
+let g:ctrlp_working_path_mode = 'ra'
+set wildignore+=*/tmp/*,*.so,*.swp,*.zip
+let g:ctrlp_custom_ignore = '\v[\/]\.(git|hg|svn)$'
+let g:ctrlp_user_command = 'find %s -type f'
+
+" Setting for airline
+" set status line
+set laststatus=2
+" enable powerline-fonts
+let g:airline_powerline_fonts=1
+
+" Setting for bash-support
+let g:BASH_AuthorName   = 'Cheng-Chung Chen'
+let g:BASH_Email        = 'leocoolchung@gmail.com'
+>>>>>>> 0d64bba582dd9a47fce46fb207d83fdf42cf4f56:vimrc
