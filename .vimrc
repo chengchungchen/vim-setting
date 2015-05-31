@@ -37,3 +37,4 @@ set autoindent
 set cindent
 colorscheme desert
 set bg=dark
+set tabstop=4
