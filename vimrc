@@ -36,11 +36,19 @@ set autoindent
 set cindent
 colorscheme desert
 set bg=dark
+
+" Setting tab to Python type
 set tabstop=4
+set shiftwidth=4
+set softtabstop=4
+set smarttab
+set expandtab
+nnoremap <F2> :<C-U>setlocal lcs=tab:>-,trail:-,eol:$ list! list? <CR>
 
 " Setting for NERDTree
 " auto start NERDTree
 "autocmd vimenter * NERDTree
+" Map <F5> to open NERDTree
 nnoremap <silent> <F5> :NERDTree<CR>
 
 " Setting for CtrlP
