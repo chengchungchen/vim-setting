@@ -14,6 +14,7 @@ Plugin 'scrooloose/nerdtree'
 Plugin 'vim-scripts/bash-support.vim'
 Plugin 'kien/ctrlp.vim'
 Plugin 'bling/vim-airline'
+Plugin 'moskytw/nginx-contrib-vim'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
